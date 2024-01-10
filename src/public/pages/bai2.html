@@ -11,6 +11,10 @@
             content: '<header>';
         }
 
+        #container::before {
+            content: '<container>';
+        }
+
         #footer::before {
             content: '<footer>';
         }
@@ -25,7 +29,7 @@
             </tr>
             <tr>
                 <td style="max-width: 25%;"></td>
-                <th rowspan="4" style="max-width: 75%;">Container</th>
+                <th id="container" rowspan="4" style="max-width: 75%;"></th>
             </tr>
             <tr>
                 <td style="max-width: 25%;"></td>

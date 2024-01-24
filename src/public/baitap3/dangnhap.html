@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            min-height: 100vh;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form {
+            border-style: inset;
+            border-radius: 2px;
+            border-color: black;
+            padding: 20px 20px;
+        }
+
+        .form-row {
+            display: flex;
+            margin: 8px auto;
+        }
+
+        .center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        label {
+            min-width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" id="login" method="post">
+            <div class="form-row">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" name="username" id="username">
+            </div>
+
+            <div class="form-row">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="form-row center">
+                <input type="checkbox" name="check" id="check" style="accent-color: blue;">
+                <label for="checkbox">Nhớ mật khẩu</label>
+            </div>
+
+            <div class="form-row center">
+                <button type="submit">Đăng nhập</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('login');
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            window.location.href = './index.html';
+        })
+    </script>
+</body>
+
+</html>

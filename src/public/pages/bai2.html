@@ -1,50 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bai 2</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-        #header::before {
-            content: '<header>';
-        }
-
-        #container::before {
-            content: '<container>';
-        }
-
-        #footer::before {
-            content: '<footer>';
-        }
-    </style>
+    <title>Thiết kế layout bằng table</title>
 </head>
-
 <body>
-    <div class="w3-container w3-display-middle">
-        <table border="1" class="w3-table w3-border" style="width: 500px; height: 100px;">
-            <tr style="text-align-last: center;">
-                <td id="header" colspan="2"></td>
+    <div class="container">
+        <table border="1" style="text-align: center; width: 600px; height: 150px; border-collapse: collapse;">
+            <tr>
+                <td colspan="4">1</td>
             </tr>
             <tr>
-                <td style="max-width: 25%;"></td>
-                <th id="container" rowspan="4" style="max-width: 75%;"></th>
             </tr>
             <tr>
-                <td style="max-width: 25%;"></td>
+                <td>2</td>
+                <td rowspan="3" style="width: 75%;">3</td>
             </tr>
             <tr>
-                <td style="max-width: 25%;"></td>
+                <td>4</td>
             </tr>
             <tr>
-                <td style="max-width: 25%;"></td>
+                <td>5</td>
             </tr>
-            <tr style="text-align-last: center;">
-                <td id="footer" colspan="2"></td>
+            <tr>
+                <td colspan="4">6</td>
             </tr>
         </table>
     </div>
 </body>
-
 </html>

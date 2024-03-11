@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form .row {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .custom_label {
+            min-width: 100px; /* Adjust this value as needed */
+            display: inline-block; /* Ensures the min-width property works */
+            margin-right: 10px; /* Add margin-right for spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <h1><strong>THÔNG TIN ĐĂNG KÝ</strong></h1>
+    <form action="">
+        <div class="row">
+            <label class="custom_label" for="name">Họ tên:</label>
+            <input type="text" name="name">
+        </div>
+        <div class="row">
+            <label class="custom_label" for="password">Password:</label>
+            <input type="password" name="password">
+        </div>
+        <div class="row">
+            <label class="custom_label">Đăng ký học:</label>
+
+            <label for="toan">Toán</label>
+            <input type="checkbox" name="html">
+
+            <label for="van">Văn</label>
+            <input type="checkbox" name="css">
+
+            <label for="anhvan">Tiếng Anh</label>
+            <input type="checkbox" name="css">
+
+            <label for="khtn">KHTN</label>
+            <input type="checkbox" name="css">
+
+            <label for="khxh">KHXH</label>
+            <input type="checkbox" name="css">
+        </div>
+        <div class="row">
+            <label class="custom_label" for="gender">Giới tính:</label>
+
+            <label for="boy">Nam</label>
+            <input type="checkbox" name="" id="">
+
+            <label for="girl">Nữ</label>
+            <input type="checkbox" name="girl" id="">
+        </div>
+        <div class="row">
+            <lable class="custom_label" for="cities">Thành phố:</lable>
+            <select name="cities">
+                <option value="hanoi">Hà Nội</option>
+                <option value="hochiminh    ">Hồ Chí Minh</option>
+                <option value="danang">Đà Nẵng</option>
+                <option value="haiphong">Hải Phòng</option>
+                <option value="cantho">Cần Thơ</option>
+            </select>
+        </div>
+        <div class="row">
+            <button type="submit">Gửi</button>
+        </div>
+    </form>
+</body>
+
+</html>
